@@ -4,8 +4,8 @@ dist: trusty
 php:
   - 7.0
 before_install:
-  - echo $TEST_VAR
+  - echo ${TEST_VAR}
   - composer self-update
-  - composer config http-basic.repo.magento.com $MAGENTO_USERNAME $MAGENTO_PASSWORD
+  - composer config http-basic.repo.magento.com ${MAGENTO_USERNAME} ${MAGENTO_PASSWORD}
 install: composer install --prefer-source --no-interaction --dev
 script: php vendor/bin/phpunit -c phpunit.xml.dist
