@@ -1,0 +1,42 @@
+<table>
+    <tr>
+        <td>
+            <button style="" onclick="sendMail('<?= $this->getButtonUrl() ?>')" class="scalable" type="button" id="<?= $this->getHtmlId() ?>">
+                <span><?= $this->escapeHtml($this->getButtonLabel()) ?></span>
+            </button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    require([
+        "jquery",
+        "Magento_Ui/js/modal/alert"
+    ], function($, alert){
+        sendMail = function($url) {
+            $.ajax({
+                    type: "POST",
+                    url: $url,
+                    dataType: 'html',
+                    data: {
+                        form_key: FORM_KEY,
+                        name: $('#system_monashee_smtp_name').val(),
+                        auth: $('#system_monashee_smtp_auth').val(),
+                        ssl:$('#system_monashee_smtp_ssl').val(),
+                        smtphost:$('#system_monashee_smtp_smtphost').val(),
+                        smtpport:$('#system_monashee_smtp_smtpport').val(),
+                        username:$('#system_monashee_smtp_username').val(),
+                        password:$('#system_monashee_smtp_password').val(),
+                        email:$('#system_monashee_smtp_test_email').val(),
+                        from_email:$('#system_monashee_smtp_return_path_email').val()
+                    },
+                    showLoader: true
+                }).done(function(data){
+                    alert({
+                        title:'Email test result',
+                        content: data
+                    });
+            });
+        };
+    });
+</script>

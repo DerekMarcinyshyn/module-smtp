@@ -1,0 +1,31 @@
+{
+    "name": "monashee/smtp",
+    "description": "Magento 2 extension which allows custom SMTP such as SendGrid, MailUp etc for sending transactional email",
+    "keywords": [
+        "magento 2",
+        "smtp"
+    ],
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Derek Marcinyshyn",
+            "email": "derek@marcinyshyn.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.0.12",
+        "magento/module-backend": "100.0.*|100.1.*",
+        "magento/framework": "~100.0.*|100.1.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Monashee\\Smtp\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
