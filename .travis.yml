@@ -3,10 +3,10 @@ sudo: required
 dist: trusty
 php:
   - 7.0
-before_install: composer self-update
-install:
-  - echo "{\"http-basic\":{\"repo.magento.com\":{\"username\":\"${MAGENTO_USERNAME}\",\"password\":\"${MAGENTO_PASSWORD}\"}}}" > auth.json
-  - composer install --prefer-dist
+before_install:
+  - composer self-update
+  - composer config http-basic.repo.magento.com $MAGENTO_USERNAME $MAGENTO_PASSWORD
+install: composer install --prefer-source --no-interaction --dev
 script: php vendor/bin/phpunit -c phpunit.xml.dist
 env:
   global:
