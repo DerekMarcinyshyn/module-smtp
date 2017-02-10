@@ -15,8 +15,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": "~7.0.12",
-    "magento/module-backend": "100.0.*|100.1.*",
-    "magento/framework": "~100.0.*|100.1.*"
+    "magento/module-backend": "100.1.*",
+    "magento/framework": "100.1.*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.1.0",
