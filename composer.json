@@ -12,10 +12,8 @@
       "email": "derek@marcinyshyn.com"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "php": "~5.6.5|7.0.2|7.0.4|~7.0.6",
-    "zendframework/zend-http": "^2.6",
     "magento/framework": "100.1.*"
   },
   "require-dev": {
