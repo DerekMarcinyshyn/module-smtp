@@ -7,5 +7,6 @@ script:
  - unzip -qq 2.1.4.zip
  - cd magento2-2.1.4/
  - composer require --prefer-source --no-interaction monashee/smtp:dev-master
- - ./vendor/bin/phpunit -c magento2-2.1.4/app/code/Monashee/Smtp/phpunit.xml.dist
+ - ls -al
+ - ./vendor/bin/phpunit -c ./app/code/Monashee/Smtp/phpunit.xml.dist
 
