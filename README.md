@@ -7,6 +7,11 @@ Magento 2 extension which allows custom SMTP such as SendGrid, MailUp etc for se
 - ACL 
 - Multi-store
 
+Admin configurations located at Stores - Configuration - Advanced - System - Custom SMTP
+
+## Screenshot
+![alt tag](https://raw.githubusercontent.com/DerekMarcinyshyn/smtp/master/screenshot.jpg)
+
 ## Install
 
 ### Composer
