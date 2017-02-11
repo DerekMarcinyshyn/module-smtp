@@ -6,7 +6,7 @@ script:
  - wget https://github.com/magento/magento2/archive/2.1.4.zip
  - unzip -qq 2.1.4.zip
  - cd magento2-2.1.4/
- - composer require --prefer-source --no-interaction monashee/smtp:dev-master
+ - composer require --prefer-source --no-interaction monashee/smtp
  - ls -al
  - ./vendor/bin/phpunit -c ./app/code/Monashee/Smtp/phpunit.xml.dist
 
