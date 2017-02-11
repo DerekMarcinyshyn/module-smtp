@@ -4,6 +4,6 @@ dist: trusty
 php: 7.0
 script:
  - wget https://github.com/magento/magento2/archive/2.1.4.zip
- - unzip -qq
+ - unzip -qq 2.1.4.zip
  - cd magento2-2.1.4/
 
