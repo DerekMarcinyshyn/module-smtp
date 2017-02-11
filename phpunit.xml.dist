@@ -12,7 +12,7 @@
          colors="true"
          bootstrap="./Test/Unit/bootstrap.php"
 >
-    <testsuite name="AdvLayNav Unit Tests">
+    <testsuite name="Monashee Smtp Unit Tests">
         <directory suffix="Test.php">Test/Unit</directory>
     </testsuite>
     <filter>

@@ -7,7 +7,7 @@
  * @license Open Software License version 3.0
  */
 
-require_once realpath(__DIR__ . '/../../vendor/autoload.php');
+require_once realpath('./vendor/autoload.php');
 
 /**
  * @SuppressWarnings(PHPMD.ShortMethodName)
