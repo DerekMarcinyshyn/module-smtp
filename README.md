@@ -17,4 +17,4 @@ composer require monashee/smtp
 
 ### Manual Download
 
-Click here to download latest release
+[Click here to download latest release](https://github.com/DerekMarcinyshyn/smtp/releases)
