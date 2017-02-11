@@ -1,10 +1,9 @@
 language: php
 sudo: required
 dist: trusty
-php:
-  - 7.0
-before_install:
-  - composer self-update
-  - composer config http-basic.repo.magento.com $MAGENTO_USERNAME $MAGENTO_PASSWORD
-install: composer install --prefer-source --no-interaction --dev
-script: php vendor/bin/phpunit -c phpunit.xml.dist
+php: 7.0
+script:
+ - wget https://github.com/magento/magento2/archive/2.1.4.zip
+ - unzip -qq
+ - cd magento2-2.1.4/
+
