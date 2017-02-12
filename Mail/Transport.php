@@ -30,7 +30,7 @@ class Transport extends \Zend_Mail_Transport_Smtp implements TransportInterface
      * @param MessageInterface $message
      * @param Data $data
      */
-    public function __construct(MessageInterface $message, Data $data = null)
+    public function __construct(MessageInterface $message, Data $data)
     {
         if (!$message instanceof \Zend_Mail) {
             throw new \InvalidArgumentException('The message should be an instance of \Zend_Mail');
