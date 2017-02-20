@@ -21,6 +21,32 @@ Admin configurations located at Stores -> Configuration -> Advanced -> System ->
 composer require monashee/smtp
 ```
 
+Enable Module
+
+```php
+php bin/magento module:enable Monashee_Smtp
+
+php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+```
+
+You may need to Flush Magento Cache after installation.
+
 #### Manual Download
 
 [Click here to download latest release](https://github.com/DerekMarcinyshyn/smtp/releases)
+
+## Uninstall
+
+I would suggest removing the module since it overwrites the Mail Sending Settings.
+
+```php
+php bin/magento module:disable Monashee_Smtp
+
+php bin/magento module:uninstall Monashee_Smtp
+
+php bin/magento setup:di:compile
+```
+
+Magento should remove it from your composer.json and composer.lock files as well as deleting from vendor folder.
