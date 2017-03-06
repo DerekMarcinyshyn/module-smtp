@@ -1,5 +1,5 @@
 {
-  "name": "monashee/smtp",
+  "name": "monashee/module-smtp",
   "description": "Magento 2 extension which allows custom SMTP such as SendGrid, MailUp etc for sending transactional email",
   "keywords": [
     "magento 2",
