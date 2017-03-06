@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DerekMarcinyshyn/module-smtp.svg?branch=master)](https://travis-ci.org/DerekMarcinyshyn/module-smtp)
 
-Magento 2 extension which allows custom SMTP such as SendGrid, MailUp etc for sending transactional email. 
+Magento 2 module which allows custom SMTP such as SendGrid, MailUp etc for sending transactional email. 
 
 - ACL 
 - Multi-store
